@@ -15,6 +15,7 @@ class Dashboard extends Component
     public $form = [
         'joint' => null,
         'muscle' => null,
+        'notes' => null,
     ];
 
     public function render()
@@ -108,6 +109,7 @@ class Dashboard extends Component
             'today_weather' => $this->todayWeather['main'],
             'joint_pain' => $this->form['joint'],
             'muscle_pain' => $this->form['muscle'],
+            'notes' => $this->form['notes'],
         ]);
 
         $this->saved = true;
